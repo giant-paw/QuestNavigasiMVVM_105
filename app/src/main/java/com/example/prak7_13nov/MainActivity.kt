@@ -20,8 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Prak7_13NovTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "",
+                    Navigasi(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
