@@ -37,6 +37,7 @@ fun FormulirView(
     var nama by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
     var gender by remember { mutableStateOf("") }
+    var email by remember { mutableStateOf("") }
 
     val listData: MutableList<String> = mutableListOf(nama, gender, alamat)
 
@@ -76,6 +77,32 @@ fun FormulirView(
                 }
                 Text(text = selectedGender) }
         }
+
+        TextField(
+            value = alamat,
+            onValueChange = { alamat = it },
+            label = {
+                Text("Alamat")
+            },
+            placeholder = {
+                Text("Isi Alamat Anda")
+            },
+            modifier = modifier.fillMaxWidth()
+                .padding(5.dp)
+        )
+
+        TextField(
+            value = email,
+            onValueChange = { email = it },
+            label = {
+                Text("Email")
+            },
+            placeholder = {
+                Text("Isi Email Anda")
+            },
+            modifier = modifier.fillMaxWidth()
+                .padding(5.dp)
+        )
         Button(
             onClick = {
                 onClickButton(listData)
