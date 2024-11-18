@@ -50,6 +50,15 @@ fun TampilMahasiswaView(
             argu = mhs.notelpon
         )
 
+        Button(
+            onClick = {
+                navController.popBackStack()
+            },
+            modifier = Modifier.padding(vertical = 10.dp)
+        ) {
+            Text("Kembali")
+        }
+
     }
 }
 
