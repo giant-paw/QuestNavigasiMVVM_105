@@ -26,6 +26,11 @@ fun TampilMahasiswaView(
         )
 
         TampilData(
+            param = "nim",
+            argu = mhs.nim
+        )
+
+        TampilData(
             param = "Gender",
             argu = mhs.gender
         )
@@ -35,7 +40,15 @@ fun TampilMahasiswaView(
             argu = mhs.alamat
         )
 
-        
+        TampilData(
+            param = "Email",
+            argu = mhs.email
+        )
+
+        TampilData(
+            param = "No Telepon",
+            argu = mhs.notelpon
+        )
 
     }
 }
