@@ -35,6 +35,8 @@ fun TampilMahasiswaView(
             argu = mhs.alamat
         )
 
+        
+
     }
 }
 
